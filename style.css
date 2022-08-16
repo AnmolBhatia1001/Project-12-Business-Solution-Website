@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Raleway;
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+}
+
+body > * {
+    padding: 30px 75px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Common Flex */
+
+.nav-bar,
+nav,
+.brand-logo,
+.button-section,
+.header-main,
+.header-subscribe,
+.main-stats,
+.section01,
+.section02,
+.section03,
+.team .section00,
+.foo-top,
+.foo-icons,
+.foo-bottom,
+.team-data{
+    display: flex;
+    flex-direction: row;
+}
+
+
+header,
+main,
+.header-main-image,
+.header-main-content,
+main,
+.main-stats div,
+.hero,
+.hero-data,
+.hero-image,
+.team,
+.team-data-section,
+footer,
+.products,
+.features,
+.resources,
+.company,
+.fav-thing{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  */
+
+
+header{
+    background-color: #636C79;
+    width: 100%;
+
+    justify-content: space-between;
+
+}
+
+.brand-logo{
+    width: 250px;
+}
+
+header img{
+    height: 50px;
+}
+
+
+.nav-bar{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav a{
+    padding: 10px;
+    margin: 0px 10px;
+    font-weight: 500;
+}
+
+nav{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.button-section{
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    /* width: 150px; */
+    /* height: 100%; */
+}
+
+.button-section button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    font-size: 15px;
+    font-family: Raleway;
+    font-weight: 500;
+    padding: 10px 40px;
+}
+
+
+
+
+
+
+
+
+
+.header-main{
+    margin-top: 75px;
+    color: white;
+
+    
+
+    padding: 0px 25px;
+}
+
+.header-main-image{
+    /* width: 450px; */
+    /* height: 550px; */
+    margin: 40px 0px;
+    /* margin-left: 25px;
+    margin-right: 50px; */
+
+    background-image: url(./header-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 6px;
+
+    width: 40%;
+}
+
+
+.header-main-content{
+    padding: 50px;
+    width: 60%;
+    /* height: 100%; */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 2.5em;
+}
+
+
+.header-heading h1{
+    font-size: 70px;
+}
+
+.header-sub-heading p{
+    font-size: 20px;
+    opacity: 75%;
+}
+
+.header-subscribe{
+    padding: 5px;
+    background-color: white;
+}
+
+.header-subscribe input::placeholder{
+   background-color: transparent;
+   color: rgba(0, 0, 0, 0.425);
+}
+
+.header-subscribe input{
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+    width: 300px;
+}
+
+.header-subscribe img{
+    height: 40px;
+}
+
+
+
+.header-subscribe button{
+    background-color: #8BB7A2;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 12px 40px;
+}
+ 
+
+/* .header-main-image img{
+    height: 100%;
+} */
+
+main{
+    gap: 3em;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.main-heading h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-stats{
+    justify-content: space-around;
+    width: 100%;
+}
+
+.main-stats div{
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.main-stats div h2{
+    font-size: 30px;
+}
+
+.main-stats div p{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 75%;
+}
+
+
+
+.hero{
+    align-items: center;
+    justify-content: center;
+
+    gap: 5em;
+}
+
+
+
+
+
+.hero-image img{
+    height: 450px;
+    width: 375px;
+    object-fit: cover;
+    
+    border-radius: 10px;
+}
+
+.h1 img{
+    object-position: top right;
+}
+
+.h2 img{
+    object-position: top ;
+}
+
+.h3 img{ 
+    object-position: center ;
+}
+
+.section02{
+    flex-direction: row-reverse;
+}
+
+
+.hero .section00 h2{
+    font-size: 50px;
+}
+
+.section01,
+.section02,
+.section03{
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-data{
+    width: 50%;
+
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.hero-image{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-data h2{
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+
+.hero-data p{
+    font-size: 20px;
+    opacity: 75%;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+.hero-data button{
+    background-color: #8BB7A2;
+    color: white;
+    border: none;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding: 12px 40px;
+}
+
+
+.team{
+    margin: 50px 0px;
+
+    gap: 2.5em;
+}
+
+.team .section00{
+    /* padding: 10px; */
+    align-items: center;
+}
+
+.team .section00 h2{
+    width: 50%;
+
+    font-size: 40px;
+}
+
+.team .section00 p{
+    width: 50%;
+    font-size: 17.5px; 
+    line-height: 1.75;
+
+}
+
+.team-img{
+    /* padding: 25px; */
+    height: 450px;
+    /* width: 375px; */
+}
+
+.team-img img{
+    /* margin: 50px 30px; */
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+}
+
+.team-data{
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5em;
+}
+
+.team-data-section{
+    gap: 1em;
+}
+
+
+.see-more{
+    background-color: #8BB7A2;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 30px;
+    width: 200px;
+    align-self: center;
+}
+
+
+
+
+footer{
+    background-color: #10181D;
+    color: white;
+    width: 100%;
+}
+
+
+.foo-logo img{
+    height: 40px;
+}
+
+.foo-top{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.foo-icons{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.foo-icons img{
+    padding: 5px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.foo-icons{
+    width: 250px;
+
+    /* background-color: white; */
+}
+
+
+.foo-top{
+    margin: 25px 0px;
+    padding: 25px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+}
+
+.foo-bottom{
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 25px 0px;
+}
+
+.foo-bottom h3{
+    font-size: 17.5px;
+}
+
+.foo-bottom a{
+    font-size: 14px;
+    opacity: 75%;
+}
+
+.foo-bottom div{
+   gap: 1em;
+}
