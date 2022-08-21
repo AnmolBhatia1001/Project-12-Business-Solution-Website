@@ -116,6 +116,12 @@
     .team-data-section p{
         text-align: center;
     }
+
+    .hero-image img {
+        /* height: 450px; */
+        width: 100%;
+
+    }
     
 }
 
@@ -161,5 +167,10 @@
     .foo-bottom div {
         width: 50%;
         margin-top: 30px;
+    }
+
+    
+    body > * {
+        padding: 25px 10px;
     }
 }
